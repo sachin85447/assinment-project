@@ -1,0 +1,363 @@
+* {
+    padding: 0PX;
+    margin: 0PX;
+    font-family: sans-serif
+}
+
+.navigation {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    color: aliceblue;
+    text-align: center;
+
+
+
+}
+
+ul li {
+    display: inline-block;
+    margin: 25px;
+
+
+}
+
+ul li:hover {
+    color: brown;
+    cursor: pointer;
+    border-bottom: 1px solid brown;
+
+}
+
+#logo_nav {
+    height: 60px;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+}
+
+#search_bar {
+    position: absolute;
+    left: 75rem;
+    height: 25px;
+    top: 20px;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+
+}
+
+#bar_button {
+    position: absolute;
+    left: 87rem;
+    height: 29px;
+    top: 20px;
+    width: 30px;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+span {
+    display: none;
+    font-size: 40px;
+}
+
+
+@media(max-width :480px) {
+    #search_bar {
+        display: none;
+    }
+
+    #bar_button {
+        display: none;
+    }
+
+    ul li {
+
+
+        text-align: right;
+        color: rgb(244, 238, 238);
+        margin: 3px;
+
+    }
+
+    span {
+        display: block;
+        margin-left: 290px;
+
+
+    }
+}
+
+#container {
+    position: relative;
+}
+
+#my_img {
+    position: absolute;
+    z-index: -1;
+}
+
+#portfollio {
+    position: absolute;
+    font-size: 35PX;
+    top: 9rem;
+    left: 10rem;
+    color: beige;
+    animation-name: sideeffect;
+    animation-duration: 3s;
+    animation-delay: 2s;
+
+
+}
+@keyframes sideeffect {
+    from {margin-left:-800px;}
+    to {color: rgb(243, 243, 237);}
+  }
+  
+
+#lorem {
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    color: azure;
+
+    font-size: 20px;
+    animation-name: sideeffect;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+@keyframes sideeffect {
+    from {margin-left:-800px;}
+    to {color: rgb(243, 243, 237);}
+  }
+
+#butt_1 {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 27REM;
+    left: 10REM;
+    border: 2PX solid wheat;
+    border-radius: 50px;
+    color: bisque;
+    background-color: rgb(20, 170, 68);
+    animation-name: sideeffect;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+@keyframes sideeffect {
+    from {margin-left:-800px;}
+    
+  }
+
+
+#butt_1:hover {
+    background-color: rgb(29, 27, 27);
+}
+
+@media(max-width :480px) {
+    #portfollio {
+        position: absolute;
+        left: 25px;
+        font-size: 22px;
+        top: 8rem;
+    }
+
+    #lorem {
+        position: absolute;
+        left: 25px;
+        top: 12rem;
+    }
+
+    #butt_1 {
+        position: absolute;
+        top: 29rem;
+        left: 30px;
+    }
+
+    #my_img {
+        height: 600px;
+    }
+}
+
+/* second div container */
+.second_container {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(21, 23, 23);
+    position: relative;
+    top: 43.5rem;
+}
+
+#merge_left {
+    margin-left: -10px;
+}
+
+#grid_images {
+    margin-left: 150px;
+    margin-top: 100px;
+    border-left: 20px solid rgb(20, 170, 68);
+    border-bottom: 20px solid rgb(20, 170, 68);
+    transition: 1s linear;
+}
+
+#textinline {
+    display: flex;
+    margin-left: -50px;
+    margin-top: 1rem;
+}
+
+#explore_1 {
+    color: aliceblue;
+    margin-left: 200px;
+}
+
+#grid_images:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width :480px) {
+    .second_container {
+        height: 110rem;
+        margin-top: -6rem;
+    }
+
+    #merge_left {
+        margin-left: -7.7rem;
+    }
+
+    #explore_1 {
+        color: rgb(238, 246, 240);
+        z-index: 1;
+        margin-top: 29rem;
+
+    }
+
+    #textinline {
+        display: block;
+        margin-left: -9.5rem;
+        margin-top: -87.5rem;
+
+    }
+
+}
+
+.third_container {
+    width: 100%;
+    height: 650px;
+
+    position: relative;
+    top: 43.5rem;
+    background-image: url("lastimg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.end_work {
+    position: absolute;
+    width: 1100px;
+    height: 400px;
+    top: 5rem;
+    left: 15rem;
+    overflow: auto;
+    color: aliceblue;
+
+}
+
+#my_last {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    top: 32rem;
+    left: 45rem;
+    background-color: rgb(20, 170, 68);
+    border: 1px solid rgb(233, 222, 222);
+    color: white;
+}
+
+#my_last:hover {
+    background-color: rgb(63, 62, 62);
+}
+
+@media(max-width :480px) {
+    .end_work {
+        margin-left: -12rem;
+        overflow: auto;
+        width: 300px;
+    }
+
+    #my_last {
+        margin-left: -38rem;
+    }
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(25, 25, 25);
+    top: 43rem;
+}
+
+#copy_text {
+  
+    width: 100%;
+    height: 30px;
+    background-color: black;
+  margin-top: 43rem;
+}
+
+#float {
+    display: flex;
+    margin-left: 4rem;
+}
+
+#links {
+    margin-left: 300px;
+    color: beige;
+    margin-top: 100px;
+}
+
+#text1 {
+    margin-left: 40px;
+}
+
+.reserve {
+    color: aliceblue;
+    margin-left: 300px;
+    line-height: 30px;
+}
+
+#icons {
+    display: flex;
+    margin-top: -1.5rem;
+    margin-left: 60rem;
+}
+
+#social_ic {
+    color: aqua;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+@media(max-width :480px) {
+    .footer {
+        position: relative;
+        top: 35rem;
+        height: 300px;
+    }
+
+    #float {
+        display: block;
+        margin-left: -8rem;
+    
+    }
+    #copy_text{margin-top: 35rem;}
+    
+   
+    .reserve{margin-left:-0rem;}
+    #social_ic{margin-left:1rem;}
+    #icons{margin-left:15rem;}}
+   
